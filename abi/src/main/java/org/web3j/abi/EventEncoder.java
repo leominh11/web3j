@@ -29,9 +29,7 @@ public class EventEncoder {
     private EventEncoder() {}
 
     public static String encode(Event event) {
-
         String methodSignature = buildMethodSignature(event.getName(), event.getParameters());
-
         return buildEventSignature(methodSignature);
     }
 
